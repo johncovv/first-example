@@ -1,0 +1,19 @@
+{
+	"name": "module-federation-fist-example",
+	"description": "My first example of module federation",
+	"version": "1.0.0",
+	"private": true,
+	"license": "MIT",
+	"keywords": [],
+	"author": {
+		"name": "John Covv",
+		"email": "contato@johncovv.com",
+		"url": "https://johncovv.com"
+	},
+	"scripts": {
+		"install:apps": "concurrently \"yarn --cwd ./nextjs-host install\" \"yarn --cwd ./chat install\""
+	},
+	"dependencies": {
+		"concurrently": "^7.0.0"
+	}
+}
